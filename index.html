@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2528897953.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+<body>
+    <!-- Homepage Background Section -->
+    <div class="homepage-background">
+        <!--NAVIGATION-->
+        <header>
+            <nav>
+                <div class="logo">NICS</div>
+                <div class="hamburger" onclick="toggleNav()">☰</div>
+                <ul id="nav-links">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Text and Image -->
+        <h1 class="h1-text">
+            <span class='h'>Hello &nbsp;<span class='hello'><em>I'am</em></span><br>
+            <span class='name'><em><span id="typed-name"></span></em></span><br>
+            <span class='bsit'>BSIT Student</span>
+        </h1>
+        
+        <p class="intro-text">Hello everyone, I'm Nicole Patrice Torrero, a budding web developer <br>ready to craft your digital vision into reality</p>
+        <!--pic-->
+        <img src="images/homepage_pic.jpg" alt="homepage" class="pic">
+
+        <!-- Buttons -->
+        <a href="Torrero_Nicole_CV.docx" download class="btnn download-btn">Download CV &nbsp;<i class="fa-solid fa-arrow-down"></i></a><br>
+
+        <div class="menu-icon" onclick="toggleLogos()">
+            <div class="dots-container">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="ellipsis-icon">&#x2026;</div>
+            <div class="logos">
+                <a href="https://www.instagram.com/_nicsx3/" target="_blank">
+                    <img src="images/instagram_logo.png" alt="Instagram" class="logo logo2">
+                </a>
+                <a href="https://x.com/torrero_nicole" target="_blank">
+                    <img src="images/twitter_logo.png" alt="Twitter" class="logo logo3">
+                </a>
+                <a href="https://www.facebook.com/nicole.torrero.379" target="_blank">
+                    <img src="images/fb_logo.jpg" alt="Facebook" class="logo logo4">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Background Section -->
+    <div id="about-me" class="aboutme-background">
+        <h1 class='abtme'>ABOUT ME</h1>
+        <p class="aboutme">Welcome to my corner of the web! My name is <br> <em>Nicole Patrice Torrero</em>, and I am passionate about <br>creating beautiful, responsive websites that deliver <br>exceptional user experiences. fill the entire browser <br> window and enables vertical scrolling when it overflows.</p>
+        <nav class="about-part">
+            <ul>
+                <li class="educ"><a href="#education-details" id="education-link">Education</a></li>
+                <li class="skills"><a href="#experience-details" id="experience-link">Skills</a></li>
+            </ul>
+        </nav>
+
+        <!--Education Part-->
+        <div id="education-details" class="education-background">
+            <p class="highschool"><span class='date'>2010- 2016</span><br>
+              Lucena West 1 Elemenatry School</p>
+            <p class="senior-high"><span class ='date'>2016 - 2020</span><br>
+              Quezon National High School</p>
+            <p class="senior-high1"><span class ='date'>2020 - 2022</span><br>
+               STI College Lucena</p>
+          </div>
+        
+          <div id="experience-details" class="experience-background">
+            <img src="images/html_logo.png" alt="HTML" class="skill-logo logo_html">
+            <img src="images/css_logo.png" alt="CSS" class="skill-logo logo_css">
+            <img src="images/js_logo.png" alt="JavaScript" class="skill-logo logo_js"><br>
+            <img src="images/python_logo.png" alt="Python" class="skill-logo logo_python">
+            <img src="images/figma_logo.png" alt="Figma" class="skill-logo logo_figma">
+          </div>
+    </div>
+
+    <!-- About Me Pic -->
+    <img src="images/about-pc.jpg" alt="about-pic" class="about-pic">
+
+    <!--Projects Part-->
+    <div id="projects" class="project-background">
+        <h1>Recent Projects</h1>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide active">
+                        <div class="project-card" id="project1">
+                            <img src="images/calculator_pic.jpg" alt="Calculator Project" class="project-image">
+                            <div class="project-info">
+                                <h2 class="project-title">Calculator</h2>
+                                <p class="project-description">This is a calculator project using HTML, CSS, and JavaScript.</p>
+                                <a href="https://nicoletorre.github.io/online-calculator/" target="_blank" class="project-link">
+                                    Visit Project <span class="arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="project-card" id="project2">
+                            <img src="images/resume_pic.jpg" alt="Resume Project" class="project-image">
+                            <div class="project-info">
+                                <h2 class="project-title">Resume</h2>
+                                <p class="project-description">This online resume is made through HTML and CSS.</p>
+                                <a href="https://nicoletorre.github.io/online-resume/" target="_blank" class="project-link">
+                                    Visit Project <span class="arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="project-card" id="project3">
+                            <img src="images/musicPlayer.jpg" alt="Music Player" class="project-image">
+                            <div class="project-info">
+                                <h2 class="project-title">Music Player</h2>
+                                <p class="project-description">This music player project is made through HTML and CSS.</p>
+                                <a href="#" target="_blank" class="project-link">
+                                    Visit Project <span class="arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="project-card" id="project4">
+                            <img src="images/quote_generator.jpg" alt="Quote Generator Project" class="project-image">
+                            <div class="project-info">
+                                <h2 class="project-title">Quote Generator</h2>
+                                <p class="project-description">This quote generator project is made through HTML and CSS.</p>
+                                <a href="#" target="_blank" class="project-link">
+                                    Visit Project <span class="arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="project-card" id="project5">
+                            <img src="images/to-do-list.jpg" alt="To-Do List Project" class="project-image">
+                            <div class="project-info">
+                                <h2 class="project-title">To-Do List</h2>
+                                <p class="project-description">This to-do list project is made through HTML and CSS.</p>
+                                <a href="#" target="_blank" class="project-link">
+                                    Visit Project <span class="arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrowleft glide__arrow--left" data-glide-dir="<"><</button>
+                <button class="glide__arrowright glide__arrow--right" data-glide-dir=">">></button>
+            </div>
+        </div>
+    </div>
+    
+    <!--Contact Us-->
+    <div id="contact" class="contact-background">
+        <h2 class="contact-text">Contact Us</h2>
+        <h1 class="get">Get In Touch</h1><br>
+        <p class="text">For questions, technical assistance, or <br> collaboration opportunities use the <br>contact information provided</p><br>
+        <p class="contactt">Contact No.</p>
+        <p class="phone"><i class="fa-solid fa-phone"></i> &nbsp;09392703712</p>
+
+        <p class="email1">Email</p>
+        <p class="email"><i class="fa-solid fa-envelope"></i> &nbsp;<a href="mailto:nicoletorrero359@gmail.com" style="color: white;">nicoletorrero359@gmail.com</a></p>
+
+        <p class="address1">Address</p>
+        <p class="address"><i class="fa-solid fa-location-dot"></i> &nbsp;Isabang Lucena City</p>
+        <section class="login">
+            <form>
+                <h1>Send a Message</h1>
+                <div class="input-container">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter Username">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                </div>
+                <div class="input-container">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="2" placeholder="Enter your message"></textarea>
+                </div>
+                <button>Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3> 2024 Your Company. All rights reserved.</h3>
+            </div>
+
+            <div class="terms">
+                <ul>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Policy</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    
+    <script src="website.js"></script>
+</body>
+</html>
